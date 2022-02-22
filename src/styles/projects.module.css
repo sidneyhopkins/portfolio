@@ -1,0 +1,90 @@
+
+
+
+.projects h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  margin: 60px auto;
+}
+
+.projects .grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.projects .box {
+  margin: 15px;
+  width: 350px;
+  height: 350px;
+
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  visibility: visible;
+}
+
+.box .container {
+  transform: translate(0, -355px);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.box .container:hover {
+  opacity: 1;
+}
+
+figcaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+figcaption h3 {
+  margin: 0 auto;
+  font-size: 1.3em;
+
+}
+
+figcaption p {
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+
+figcaption .links {
+  display: inline-block;
+}
+
+figcaption .link {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px transparent solid;
+}
+
+figcaption .link:hover {
+  border-color: white;
+}
+
+
+
+
+
+
+
+
+

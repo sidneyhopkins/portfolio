@@ -1,0 +1,85 @@
+
+.banner {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(../../static/space.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.banner .col {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner h3 {
+  margin-left: 10px;
+  font-size: 2em;
+}
+
+.banner h2 {
+  font-size: 3em;
+}
+
+.banner .elevator {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 2em;
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+}
+
+.banner .skills {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-family: "Spartan", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 0 10px 10px;
+  word-spacing: 2.0em;
+  line-height: 3em;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.banner span {
+  font-size: small;
+  color:rgb(0, 238, 255)
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.banner .social img {
+  text-align: center;
+  width: 36px;
+  padding: 2px;
+  border: solid transparent 2px;
+  border-radius: 50px;
+  margin: 2px;
+  transition: 0.2s ease-out all;
+  display: inline-block;
+}
+
+.banner .social img:hover {
+  border-color: teal;
+  transform: scale(1.1);
+}
+
+.social .click {
+  color: white;
+}
