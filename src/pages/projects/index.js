@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import Projects from "../../components/Projects"
+import ProjectComponent from "../../components/ProjectComponent"
 
 export default function ProjectsPage() {
   return (
     <Layout>
-      <Projects />
+      <ProjectComponent />
     </Layout>
   )
 }

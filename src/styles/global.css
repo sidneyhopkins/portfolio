@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Spartan');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&family=Spartan');
 
 html, body {
   min-height: 100%;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 body {
 
-  font-family: "Spartan", Arial, Helvetica, sans-serif;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
 }
 
 p {
   margin: 16px auto;
   line-height: 1.5em;
-  font-family: "Noto Serif Display", Georgia, Times, 'Times New Roman', serif;
+  font-family: "Inconsolata", Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -31,8 +31,7 @@ nav {
 
 nav img {
   width: 100%;
-  min-width: 280px;
-  max-width: 500px;
+  min-width: 300px;
 }
 
 nav .links {
@@ -58,7 +57,7 @@ nav a:link {
 }
 
 nav a:hover {
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
   text-decoration: none;
 }
 

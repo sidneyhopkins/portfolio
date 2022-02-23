@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import logo from "../../static/8.svg"
+import logo from "../../static/20.svg"
 
 export default function Navbar() {
   return (

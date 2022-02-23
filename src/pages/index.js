@@ -1,65 +1,100 @@
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
-import Projects from "../components/Projects"
-import { Link } from "gatsby"
-import LI from "../../static/In-White-26.png"
-import GH from "../../static/GitHub-Mark-Light-32px.png"
-import EmailIcon from "@mui/icons-material/Email"
-import {
-  ArrowRight,
-  ArrowRightAlt,
-  ContentPaste,
-  ContentPasteGo,
-  ContentPasteOutlined,
-  EmailOutlined,
-  Mouse,
-} from "@mui/icons-material"
-import { Button, ButtonGroup } from "@mui/material"
+import ProjectComponent from "../components/ProjectComponent"
+import ContentPasteOutlined from "@mui/icons-material/ContentPasteOutlined"
+import Button from "@mui/material/Button"
 
 export default function Home() {
   const email = "sidhopkins14@gmail.com"
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(email)
-  }
-
   return (
     <Layout>
       <section className={styles.banner}>
-        <div className={styles.col}>
-          <h3>Technologies</h3>
-          <p className={styles.skills}>
-            <span>Frontend:</span> JavaScript React Bootstrap HTML CSS
-            styled-components CSS-modules Material-UI Google-Fonts
-          </p>
-          <p className={styles.skills}>
-            <span>Tools:</span> Git/GitHub npm VS-Code Chrome-DevTools
-          </p>
-          <p className={styles.skills}>
-            <span>DevOps:</span> Gatsby Netlify Cloudinary
-          </p>
-        </div>
-        <div className={styles.col}>
-          <h2>I am a self-taught front end web developer...</h2>
+        <div className={styles.col1}> </div>
+        <div className={styles.col2}>
+          <h3>I am a self-taught front end web developer</h3>
           <p className={styles.elevator}>
             passionate about building clean, user friendly and responsive UIs.
             Curious, organized, discerning, & dedicated. Always interested in
             learning new technologies and languages!
           </p>
-          <div className={styles.social}>
-            <ButtonGroup size="large" variant="contained">
-              <Button>View My Github</Button>
-              <Button>View My LinkedIn</Button>
-              <Button className={styles.click} onClick={handleCopy()}>
-                Copy my Email
-                <ContentPasteOutlined />
-              </Button>
-            </ButtonGroup>
-          </div>
         </div>
       </section>
-      <Projects />
+      <div className={styles.buttons}>
+        <Button
+          className={styles.button}
+          variant="contained"
+          size="large"
+          href="https://github.com/sidneyhopkins"
+        >
+          View My Github
+        </Button>
+        <Button
+          className={styles.button}
+          variant="contained"
+          size="large"
+          href="https://www.linkedin.com/in/sidney-hopkins/"
+        >
+          View My LinkedIn
+        </Button>
+        <Button
+          className={styles.button}
+          variant="contained"
+          size="large"
+          onClick={() => {
+            navigator.clipboard.writeText(email)
+          }}
+        >
+          Copy My Email
+          <ContentPasteOutlined />
+        </Button>
+      </div>
+
+      <h2>Tech Skills</h2>
+
+      <div className={styles.tech}>
+        <div className={styles.list}>
+          <h3>Frontend:</h3>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Material-UI</li>
+            <li>Styled-Components</li>
+            <li>Google Fonts</li>
+            <li>CSS-modules</li>
+          </ul>
+        </div>
+
+        <div className={styles.list}>
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>npm</li>
+            <li>Visual Studio Code</li>
+            <li>Chrome DevTools</li>
+          </ul>
+          <h3>DevOps</h3>
+          <ul>
+            <li>Gatsby</li>
+            <li>Netlify</li>
+            <li>Cloudinary</li>
+          </ul>
+        </div>
+
+        <div className={styles.list}>
+          <h3>Currently Learning:</h3>
+          <ul>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+      <ProjectComponent />
     </Layout>
   )
 }
