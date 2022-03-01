@@ -1,7 +1,7 @@
 
 
 
-.projects h2 {
+.h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -12,16 +12,15 @@
 .projects .grid {
   display: inline-flex;
   flex-wrap: wrap;
-  align-items: space-around;
-  justify-content: space-around;
+  gap: 30px;
+  justify-content: space-evenly;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .projects .box {
-  margin: 15px;
-  width: 350px;
-  height: 350px;
-
+  width: 275px;
+  height: 275px;
 }
 
 .box img {
@@ -32,12 +31,12 @@
 }
 
 .box .container {
-  transform: translate(0, -355px);
-  background-color: rgba(77, 227, 253, 0.555);
+  transform: translate(0, -280px);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .box .container:hover {
@@ -51,18 +50,21 @@ figcaption {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  color:  rgb(255, 255, 255);
 }
 
 figcaption h3 {
   margin: 0 auto;
-  font-size: 1.4em;
+  font-size: 1.7em;
   text-transform: uppercase;
-
+  /* color: white; */
+  text-align: center;
 }
 
 figcaption p {
   margin: 0 15px;
-  font-size: 1.3em;
+  font-size: 1.5em;
+
 }
 
 figcaption .links {
@@ -72,7 +74,7 @@ figcaption .links {
 figcaption .link {
   font-size: 1.8em;
   text-transform: uppercase;
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   border-bottom: 2px transparent solid;
   margin: 0 20px;
@@ -80,7 +82,7 @@ figcaption .link {
 }
 
 figcaption .link:hover {
-  border-color: white;
+  border-color: rgb(255, 255, 255);
 }
 
 

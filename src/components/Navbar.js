@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import logo from "../../static/20.svg"
+import logo from "../../static/22.svg"
 
 export default function Navbar() {
   return (
@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/projectspage">Projects</Link>
+        <Link to="/projects">Projects</Link>
       </div>
     </nav>
   )

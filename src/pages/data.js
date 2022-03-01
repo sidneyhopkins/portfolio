@@ -1,18 +1,18 @@
 import crochet from "../../static/crochet-calc.png"
-import crud from "../../static/crud-journal.png"
-import weather from "../../static/weatherapp.png"
+import crud from "../../static/crud.png"
+import weather from "../../static/weatherapp2.png"
 import bird from "../../static/bird.png"
+import space from "../../static/space.png"
 
 export const projects = [
   {
-    id: "110",
-    title: "Crochet Calculator",
-    code: "https://github.com/sidneyhopkins/crochet-calculator",
-    site: "https://codepen.io/sidneyhopkins/pen/Rwjoery",
-    img: crochet,
-    alt: "crochet project",
-    description:
-      "Users can determine the number of chain stitches needed for a crochet project.",
+    id: "330",
+    title: "CRUD Journal App",
+    code: "https://github.com/sidneyhopkins/crud-react",
+    site: "https://sad-engelbart-8686e7.netlify.app",
+    img: crud,
+    alt: "journal app project",
+    description: "A sharp CRUD journal made with React.",
   },
   {
     id: "220",
@@ -21,18 +21,7 @@ export const projects = [
     site: "https://nifty-ptolemy-7a4996.netlify.app",
     img: weather,
     alt: "weather app project",
-    description:
-      "Type a city name and receive weather data using the OpenWeatherMap API.",
-  },
-  {
-    id: "330",
-    title: "CRUD Journal App",
-    code: "https://github.com/sidneyhopkins/crud-react",
-    site: "https://sad-engelbart-8686e7.netlify.app",
-    img: crud,
-    alt: "journal app project",
-    description:
-      "A sharp journal with CRUD (create, read, update, delete) functionality.",
+    description: "Type a city to receive live weather data.",
   },
   {
     id: "440",
@@ -41,7 +30,24 @@ export const projects = [
     site: "https://sidneyhopkins.github.io/react-project-ecommerce/",
     img: bird,
     alt: "ecommerce project",
-    description:
-      "Select a watercolor at the bottom of the page to add it to a collapsable shopping cart.",
+    description: "A realistic ecommerce page with a shopping cart.",
+  },
+  {
+    id: "110",
+    title: "Crochet Calculator",
+    code: "https://github.com/sidneyhopkins/crochet-calculator",
+    site: "https://codepen.io/sidneyhopkins/pen/Rwjoery",
+    img: crochet,
+    alt: "crochet project",
+    description: "Users can accurately & quickly plan their crochet projects.",
+  },
+  {
+    id: "550",
+    title: "In Progress",
+    code: "",
+    site: "",
+    img: space,
+    alt: "clone",
+    description: "Clone of a website.",
   },
 ]

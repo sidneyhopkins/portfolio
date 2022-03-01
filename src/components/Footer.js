@@ -1,20 +1,19 @@
 import React from "react"
-import LI from "../../static/In-White-26.png"
-import GH from "../../static/GitHub-Mark-Light-32px.png"
-import { Link } from "gatsby"
+import LI from "../../static/LI.png"
+import GH from "../../static/GH.png"
 
 export default function Footer() {
   return (
     <footer>
       <div className="social-links">
-        <Link to="https://www.linkedin.com/in/sidney-hopkins/">
+        <a href="https://www.linkedin.com/in/sidney-hopkins/">
           <img src={LI} alt="LinkedIn logo" />
-        </Link>
-        <Link to="https://github.com/sidneyhopkins">
+        </a>
+        <a href="https://github.com/sidneyhopkins">
           <img src={GH} alt="github logo" />
-        </Link>
+        </a>
       </div>
-      <h5>Copyright 2022 Sidney Hopkins</h5>
+      <h5>Copyright © 2022 Sidney Hopkins</h5>
     </footer>
   )
 }
