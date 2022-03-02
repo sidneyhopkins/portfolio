@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&family=Spartan');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Righteous&family=Alfa+Slab+One&family=Lobster+Two&family=Pacifico&family=Karla&family=Spartan');
 
 html, body {
   min-height: 100%;
@@ -27,7 +27,7 @@ nav {
 
   height: 150px;
   background-color: rgba(231, 214, 198, 0.747);
-    background-image: url(../../static/sunset.jpg);
+  background-image: url(../../static/sunset.jpg);
   background-position: center center;
   background-size:cover;
 }
@@ -52,10 +52,10 @@ nav a {
   display: inline-block;
   margin-left: 40px;
   margin-right: 20px;
-  font-weight: 700;
+  font-weight: 400;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
-  color: rgb(29, 0, 82);
+  color: #5f370a;
 }
 
 nav a:link {
@@ -100,7 +100,8 @@ footer img:hover {
 footer h5 {
   word-spacing: 0.1em;
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 400;
+  color: #5f370a;
 }
 
 @media only screen and (max-width: 768px) {

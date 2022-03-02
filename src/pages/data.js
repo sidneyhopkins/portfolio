@@ -1,4 +1,4 @@
-import crochet from "../../static/crochet-calc.png"
+import crochet from "../../static/calc.png"
 import crud from "../../static/crud.png"
 import weather from "../../static/weatherapp2.png"
 import bird from "../../static/bird.png"
@@ -44,8 +44,6 @@ export const projects = [
   {
     id: "550",
     title: "In Progress",
-    code: "",
-    site: "",
     img: space,
     alt: "clone",
     description: "Clone of a website.",

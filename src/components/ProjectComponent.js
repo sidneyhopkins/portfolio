@@ -14,13 +14,19 @@ export default function ProjectComponent() {
               <figcaption>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <div className={style.links}>
-                  <a className={style.link} href={item.code}>
-                    Code
-                  </a>
-                  <a className={style.link} href={item.site}>
-                    Site
-                  </a>
+                <div>
+                  {item.code !== undefined ? (
+                    <div className={style.links}>
+                      <a className={style.link} href={item.code}>
+                        Code
+                      </a>
+                      <a className={style.link} href={item.site}>
+                        Site
+                      </a>
+                    </div>
+                  ) : (
+                    <div className={style.empty}></div>
+                  )}
                 </div>
               </figcaption>
             </div>

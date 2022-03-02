@@ -1,59 +1,57 @@
 .header h2 {
+  font-family: 'Yeseva One';
+  font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 2.5em;
-  color: rgb(0, 0, 0);
+  font-size: 2em;
+  color: #5f370a;  
   margin: 60px auto;
 }
 
-.header p {
-  padding: 10px;
-  line-height: 2em;
-  font-weight: 400;
-}
-
-.slider {
-  width: 100%;
-}
-
-.slider .grid {
-  width: 100%;
+.content {
   display: grid;
-  grid-template-columns:  1fr 1fr;
-  position: relative;
-}  
-
-.left, .right {
-  /* position: absolute; */
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:"a a e"
+                      "c d e"
+                      "f b b";
+  grid-gap: 20px;
+  margin-bottom: 20px;
 }
 
-.left {
-  margin-left: 10px;
+.a, .b, .c, .d, .e, .f {
+  background-color: #fcd8b5;
+  padding-left: 20px;
+  box-shadow: 0 0 6px 0 gray;
 }
 
-.right {
-  margin-right: 10px;
+.a {
+  grid-area: a;
 }
 
-.arrow {
-  width: 100%;
-  height: 100%;
-  color: rgba(255, 255, 255, 0.2);
+.b {
+  grid-area: b;
 }
 
-.arrow:hover {
-  color: rgba(255, 255, 255, 0.5);
+.c {
+  grid-area: c;
 }
 
-.header img {
-  width: 100%;
+.d {
+  grid-area: d;
+  background-image: url(../../static/star.png);
+  background-size:cover;
+  background-position: center;
+}
+
+.e {
+  grid-area: e;
+  background-image: url(../../static/Cosmos.jpg);
+  background-size:cover;
+  background-position: center;
+
+}
+
+.f {
+  grid-area: f;
 }
 

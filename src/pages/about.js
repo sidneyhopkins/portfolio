@@ -7,24 +7,36 @@ export default function About() {
     <Layout>
       <section className={styles.header}>
         <h2>About</h2>
-        <p>I've been learning web development since the spring of 2021...</p>
       </section>
       <section className={styles.content}>
-        <h3>Code</h3>
-        <p>
-          I started learning JavaScript in early 2021. HTML and CSS followed. I
-          took my time learning and understanding the basics. Over the summer, I
-          built some of my first apps, including a drum kit, a clock, and a
-          calculator.
-          <br /> In the fall of that year, I learned my first framework- React.
-          My strong foundation in JavaScript really helped me as I made new
-          connections about how React works. Things really started picking up
-          for me then.
-          <br /> My first React apps included an ecommerce page, a journal, and
-          a weather app. Which can be viewed in my projects page.
-        </p>
-        <h3>Reading List</h3>
-        <p>Brene Brown, Harry Potter</p>
+        <div className={styles.a}>
+          <h3>Code</h3>
+          <p>
+            I spend most of my time building apps and webpages using React. I
+            plan to learn the back end in greater detail and pick up new
+            languages as my projects get more complex. Some of my coding
+            interests include animation and implementing unique APIs. I also
+            really like to play with color.
+          </p>
+        </div>
+        <div className={styles.b}>
+          <h3>Reading List</h3>
+          <p> Daring Greatly -Brene Brown,</p>
+          <p>
+            Harry Potter and the Order of the Pheonix, <br />
+            Harry Potter and the Half Blood Prince -JK Rowling
+          </p>
+        </div>
+        <div className={styles.c}>
+          <h3>TV</h3>
+          <p>Attack on Titan, Dark, Archive 81, Doctor Who</p>
+        </div>
+        <div className={styles.f}>
+          <h3>Movies</h3>
+          <p>Harry Potter, Harry Potter, Harry Potter </p>
+        </div>
+        <div className={styles.d}></div>
+        <div className={styles.e}></div>
       </section>
     </Layout>
   )

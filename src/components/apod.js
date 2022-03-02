@@ -1,7 +1,5 @@
 import { ArrowDownward } from "@mui/icons-material"
-import ArrowRight from "@mui/icons-material/ArrowRight"
 import React, { useState } from "react"
-import { Button } from "react-bootstrap"
 import * as styles from "../styles/apod.module.css"
 
 export default function APOD() {
@@ -24,15 +22,10 @@ export default function APOD() {
       <div className={styles.container}>
         {image.hdurl === undefined ? (
           <div className={styles.imageBox}>
-            <Button
-              className={styles.button}
-              variant="contained"
-              size="large"
-              onClick={getApod}
-            >
+            <button className={styles.button} onClick={getApod}>
               <span>Get APOD</span>
               <ArrowDownward />
-            </Button>
+            </button>
             Let's put it here...
           </div>
         ) : (

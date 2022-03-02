@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(124, 106, 126);
+  background-color: #A67784;
   border: none;
   border-radius: 4px;
   padding: 20px;
@@ -28,14 +28,13 @@
   font-family: "Karla", Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   text-transform: capitalize;
-  transition: 0.5s all;
   cursor: pointer;
   text-decoration: none;
   color: white;
 }
 
 .button:hover {
-  background-color: rgb(105, 126, 153);
+  background-color: #612f5a;
 }
 
 .button span {
@@ -48,6 +47,10 @@
 
 .button:hover span {
   padding-right: 20px;
+}
+
+.button:active {
+  transform: scale(0.97);
 }
 
 .section .button {

@@ -1,41 +1,61 @@
 
 
 
-.h2 {
+.projects h2 {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-size: 2.5em;
+  font-family: 'Yeseva One';
+  font-weight: 700;
   margin: 60px auto;
+  color: #5f370a;
 }
 
 .projects .grid {
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:""; */
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   justify-content: space-evenly;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .projects .box {
-  width: 275px;
-  height: 275px;
+  width: 350px;
+  height: 350px;
+  border: solid 2px rgb(196, 196, 196);
+  /* border-radius: 100px; */
+  box-shadow: 0 0 8px 0 gray;
+
+  /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s all ease-out;
+
 }
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+
 
 .box img {
   width: 100%;
-  height: 100%;
+  height: 50%;
+  /* z-index: 0; */
+  object-position: top;
   object-fit: cover;
   visibility: visible;
 }
 
 .box .container {
-  transform: translate(0, -280px);
-  background-color: rgba(0, 0, 0, 0.8);
+  /* transform: translate(0, -280px); */
+  background-color: rgb(253, 244, 230);
   width: 100%;
-  height: 100%;
-  opacity: 0;
+  height: 50%;
+  opacity: 1;
   transition: all 0.3s ease;
 }
 
@@ -49,21 +69,20 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  color:  rgb(255, 255, 255);
+  justify-content: space-evenly;
+  /* border: solid 2px rgb(196, 196, 196); */
+  /* color:  rgb(255, 255, 255); */
 }
 
 figcaption h3 {
   margin: 0 auto;
-  font-size: 1.7em;
-  text-transform: uppercase;
-  /* color: white; */
+  font-size: 1.5em;
   text-align: center;
 }
 
 figcaption p {
   margin: 0 15px;
-  font-size: 1.5em;
+  font-size: 1em;
 
 }
 
@@ -72,17 +91,24 @@ figcaption .links {
 }
 
 figcaption .link {
-  font-size: 1.8em;
-  text-transform: uppercase;
+  font-size: 1em;
+  width: 100px;
+  background-color: #F29F8D;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  border-bottom: 2px transparent solid;
-  margin: 0 20px;
+  margin: 5px 20px;
 
 }
 
 figcaption .link:hover {
-  border-color: rgb(255, 255, 255);
+  background-color: #e4674a;
+}
+
+.empty {
+  visibility: hidden;
 }
 
 

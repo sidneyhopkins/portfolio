@@ -14,8 +14,14 @@
 }
 
 h1 {
+  font-family: 'Yeseva One';
+  font-weight: 700;
+  /* font-family: "Alfa Slab One";
+  font-weight: 400; */
+  /* font-family: 'Pacifico'; */
+  color: #5f370a;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin: 60px 0;
 }
 
@@ -23,23 +29,24 @@ h2 {
   text-align: center;
   font-size: 2em;
   margin: 20px auto;
-  
+
 }
 
 .elevator {
-  margin: 0 60px;
-  background-color: rgb(231, 214, 198);
-  box-shadow: 0 0 8px 0 gray;
-  width: 50%;
+  margin: 0 30px;
+  background-color: #ffe6db;
+  box-shadow: 0 0 12px 0 gray;
+  width: 60%;
 
 }
 
 .elevator p {
-  padding: 40px;
+  padding: 30px;
   line-height: 2.3em;
-  font-size: 1.3em;
-  font-weight: 200;
-  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-family: 'Yeseva One';
+  font-weight: 700;
+  color: #5f370a;
 
 }
 
@@ -59,21 +66,21 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(124, 106, 126);
+  background-color: #A67784;
   border: none;
   border-radius: 4px;
   padding: 20px;
   font-family: "Karla", Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   text-transform: capitalize;
-  transition: 0.5s all;
+  /* transition: ease-in 0.1s all; */
   cursor: pointer;
   text-decoration: none;
   color: white;
 }
 
 .button:hover {
-  background-color: rgb(105, 126, 153);
+  background-color: #612f5a;
 }
 
 .button span {
@@ -81,11 +88,15 @@ h2 {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: ease-out 0.5s;
 }
 
 .button:hover span {
   padding-right: 20px;
+}
+
+.button:active {
+  transform: scale(0.97);
 }
 
 .tech {
@@ -123,7 +134,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgb(243, 237, 234);
+  background-color: #fcd8b5;
   box-shadow: 0 0 6px 0 gray;
 
 }
@@ -157,7 +168,7 @@ h2 .link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(124, 106, 126);
+  background-color: #A67784;
   border: none;
   border-radius: 4px;
   padding: 20px;
@@ -169,10 +180,11 @@ h2 .link {
   text-decoration: none;
   color: white;
   margin-bottom: 60px;
+  transition: 0s all;
 }
 
 .projectbutton:hover {
-  background-color: rgb(105, 126, 153);
+  background-color: #612f5a;
 }
 
 .projectbutton span {
@@ -180,11 +192,15 @@ h2 .link {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: ease-out 0.5s;
 }
 
 .projectbutton:hover span {
-  padding-right: 60px;
+  padding-right: 50px;
+}
+
+.projectbutton:active {
+  transform: scale(0.97);
 }
 
 @media only screen and (max-width: 768px) {
