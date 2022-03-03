@@ -5,7 +5,7 @@ import ContentPasteOutlined from "@mui/icons-material/ContentPasteOutlined"
 import LI from "../../static/LI.png"
 import GH from "../../static/GH.png"
 import { Link } from "gatsby"
-import APOD from "../components/Apod"
+import Apod from "../components/Apod"
 import ArrowRight from "@mui/icons-material/ArrowRight"
 
 export default function Home() {
@@ -96,9 +96,9 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <section className={styles.apod}>
+      <section>
         <h2>My Favorite API</h2>
-        <APOD />
+        <Apod />
       </section>
       <section className={styles.projectdiv}>
         <Link className={styles.projectbutton} as="button" to="/projects">

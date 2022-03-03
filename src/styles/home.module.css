@@ -34,9 +34,9 @@ h2 {
 
 .elevator {
   margin: 0 30px;
-  background-color: #ffe6db;
+  background-color: #612f5a;
   box-shadow: 0 0 12px 0 gray;
-  width: 60%;
+  width: 70%;
 
 }
 
@@ -45,8 +45,9 @@ h2 {
   line-height: 2.3em;
   font-size: 1.5em;
   font-family: 'Yeseva One';
-  font-weight: 700;
-  color: #5f370a;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 
 }
 

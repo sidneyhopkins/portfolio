@@ -1,4 +1,4 @@
-import { ArrowDownward } from "@mui/icons-material"
+import ArrowDownward from "@mui/icons-material/ArrowDownward"
 import React, { useState } from "react"
 import * as styles from "../styles/apod.module.css"
 
@@ -33,7 +33,7 @@ export default function APOD() {
             <img src={image.hdurl} alt="" />
             <figcaption>
               <p className={styles.title}>{image.title}</p>
-              <p className={styles.copyright}>
+              <p>
                 Copyright {image.copyright} {image.date}
               </p>
               <p className={styles.explanation}>{image.explanation}</p>
