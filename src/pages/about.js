@@ -15,11 +15,19 @@ export default function About() {
             I spend most of my time building apps and webpages using React. I
             plan to learn the back end in greater detail and pick up new
             languages as my projects get more complex. Some of my coding
-            interests include animation and implementing unique APIs. I also
-            really like to play with color.
+            interests include animation and unique APIs.
           </p>
         </div>
         <div className={styles.b}>
+          <h3>TV</h3>
+          <ul>
+            <li>Attack on Titan</li>
+            <li>Dark</li>
+            <li>Archive 81</li>
+            <li>Doctor Who</li>
+          </ul>
+        </div>
+        <div className={styles.c}>
           <h3>Reading List</h3>
           <ul>
             <li>
@@ -29,21 +37,12 @@ export default function About() {
               Piranesi <span>by Susanna Clarke</span>
             </li>
             <li>
-              Harry Potter and the Order of the Pheonix
+              Harry Potter and the Order of the Pheonix{" "}
               <span>by JK Rowling</span>
             </li>
           </ul>
         </div>
-        <div className={styles.c}>
-          <h3>TV</h3>
-          <ul>
-            <li>Attack on Titan</li>
-            <li>Dark</li>
-            <li>Archive 81</li>
-            <li>Doctor Who</li>
-          </ul>
-        </div>
-        <div className={styles.f}>
+        <div className={styles.d}>
           <h3>Movies</h3>
           <ul>
             <li>Harry Potter and the Half Blood Prince</li>
@@ -51,10 +50,10 @@ export default function About() {
             <li>How to Train Your Dragon</li>
           </ul>
         </div>
-        <div className={styles.d}></div>
+        <div className={styles.e}></div>
+        <div className={styles.f}></div>
         <div className={styles.g}></div>
         <div className={styles.h}></div>
-        <div className={styles.i}></div>
       </section>
     </Layout>
   )

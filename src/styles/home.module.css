@@ -1,10 +1,4 @@
 
-.bannerImg {
-  width: 100%;
-  height: 300px;
-
-}
-
 .banner {
   display: flex;
   align-items: center;
@@ -16,9 +10,6 @@
 h1 {
   font-family: 'Yeseva One';
   font-weight: 700;
-  /* font-family: "Alfa Slab One";
-  font-weight: 400; */
-  /* font-family: 'Pacifico'; */
   color: #5f370a;
   text-align: center;
   font-size: 3.5em;
@@ -240,6 +231,23 @@ h2 .link {
 
 }
 @media only screen and (max-width: 425px) {
+  h1 {
+    margin: 100px 12px 30px;
+    font-size: 2.4em;
+  }
+  .banner {
+    margin-bottom: 40px;
+  }
+  .banner .buttons {
+    width: 250px;
+  }
+  .banner .elevator {
+    font-size: 0.9em;
+    margin-bottom: 40px;
+  }
+  .elevator p {
+    line-height: 1.8em;
+  }
 
   .tech h3 {
     font-size: 1em;
@@ -247,8 +255,28 @@ h2 .link {
   .tech ul {
     font-size: 0.8em;
   }
+
 }
+
+@media only screen and (max-width: 375px) {
+  .elevator p {
+    font-size: 1.3em;
+  }
+  .tech {
+    grid-gap: 10px;
+  }
+}
+
+
+
 @media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2.0em;
+  }
+  .elevator p {
+    font-size: 1.1em;
+  }
+
   .projectbutton {
     width: 270px;
   }

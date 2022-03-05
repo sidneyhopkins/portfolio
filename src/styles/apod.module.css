@@ -111,3 +111,13 @@
   border: 1px solid gray;
   box-shadow: 0 0 10px 0 gray;
 }
+
+@media only screen and (max-width: 425px) {
+  .imageBox figcaption .explanation {
+    font-size: 1.2em;
+  }
+  .section h3 {
+    font-size: 1em;
+  }
+
+}
