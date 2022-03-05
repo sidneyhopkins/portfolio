@@ -81,7 +81,11 @@ export default function Home() {
         </div>
 
         <div className={styles.d}>
-          <h3>Front End Learning</h3>
+          <h3>
+            Front End:
+            <br />
+            Currently Learning
+          </h3>
           <ul>
             <li>TypeScript</li>
             <li>SASS</li>
@@ -89,7 +93,11 @@ export default function Home() {
         </div>
 
         <div className={styles.e}>
-          <h3>Back End Learning</h3>
+          <h3>
+            Back End:
+            <br />
+            Currently Learning
+          </h3>
           <ul>
             <li>Node.js</li>
             <li>Express</li>
