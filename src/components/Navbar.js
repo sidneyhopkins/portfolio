@@ -1,4 +1,5 @@
-import { Close, Menu } from "@mui/icons-material"
+import Close from "@mui/icons-material/Close"
+import Menu from "@mui/icons-material/Menu"
 import { Link } from "gatsby"
 import React, { useState } from "react"
 import logo from "../../static/red.svg"

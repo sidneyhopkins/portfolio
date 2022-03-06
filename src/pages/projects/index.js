@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import { projects } from "../data"
+import { projects } from "../../components/data"
 import * as style from "../../styles/projects.module.css"
 
 export default function ProjectsPage() {
