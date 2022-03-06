@@ -5,7 +5,7 @@ import ContentPasteOutlined from "@mui/icons-material/ContentPasteOutlined"
 import LI from "../../static/LI.png"
 import GH from "../../static/GH.png"
 import { Link } from "gatsby"
-import Apod from "../components/Apod.js"
+import Apod from "../components/Apod"
 import ArrowRight from "@mui/icons-material/ArrowRight"
 
 export default function Home() {
