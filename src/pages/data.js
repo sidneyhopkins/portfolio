@@ -1,12 +1,21 @@
 import crochet from "../../static/calc.png"
 import crud from "../../static/crud.png"
-import weather from "../../static/weatherapp2.png"
+import weather from "../../static/weather.png"
 import bird from "../../static/bird.png"
-import space from "../../static/space.png"
+import cosmos from "../../static/cosmos.jpg"
+import portfolio from "../../static/portfolio.png"
 
 export const projects = [
   {
-    id: "330",
+    id: "110",
+    title: "Portfolio",
+    code: "https://github.com/sidneyhopkins/portfolio",
+    img: portfolio,
+    alt: "portfolio",
+    description: "My personal website & portfolio.",
+  },
+  {
+    id: "220",
     title: "CRUD Journal App",
     code: "https://github.com/sidneyhopkins/crud-react",
     site: "https://sad-engelbart-8686e7.netlify.app",
@@ -15,7 +24,7 @@ export const projects = [
     description: "A sharp CRUD journal made with React.",
   },
   {
-    id: "220",
+    id: "330",
     title: "React Weather App",
     code: "https://github.com/sidneyhopkins/react-weather",
     site: "https://nifty-ptolemy-7a4996.netlify.app",
@@ -33,7 +42,7 @@ export const projects = [
     description: "A realistic ecommerce page with a shopping cart.",
   },
   {
-    id: "110",
+    id: "550",
     title: "Crochet Calculator",
     code: "https://github.com/sidneyhopkins/crochet-calculator",
     site: "https://codepen.io/sidneyhopkins/pen/Rwjoery",
@@ -42,9 +51,9 @@ export const projects = [
     description: "Users can accurately & quickly plan their crochet projects.",
   },
   {
-    id: "550",
+    id: "660",
     title: "In Progress",
-    img: space,
+    img: cosmos,
     alt: "clone",
     description: "Clone of a website.",
   },

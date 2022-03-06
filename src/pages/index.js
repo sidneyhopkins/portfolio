@@ -23,13 +23,20 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.buttons}>
-          <a className={styles.button} href="https://github.com/sidneyhopkins">
+          <a
+            className={styles.button}
+            href="https://github.com/sidneyhopkins"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span>View My GitHub</span>
             <img src={GH} alt="gh logo" />
           </a>
           <a
             className={styles.button}
             href="https://www.linkedin.com/in/sidney-hopkins/"
+            target="_blank"
+            rel="noreferrer"
           >
             <span>View My LinkedIn</span>
             <img src={LI} alt="LI logo" />
@@ -60,7 +67,6 @@ export default function Home() {
             <li>CSS-modules</li>
           </ul>
         </div>
-
         <div className={styles.b}>
           <h3>Tools</h3>
           <ul>
@@ -70,7 +76,6 @@ export default function Home() {
             <li>Chrome DevTools</li>
           </ul>
         </div>
-
         <div className={styles.c}>
           <h3>Dev Ops</h3>
           <ul>
@@ -79,7 +84,6 @@ export default function Home() {
             <li>Cloudinary</li>
           </ul>
         </div>
-
         <div className={styles.d}>
           <h3>
             Front End:
@@ -91,7 +95,6 @@ export default function Home() {
             <li>SASS</li>
           </ul>
         </div>
-
         <div className={styles.e}>
           <h3>
             Back End:

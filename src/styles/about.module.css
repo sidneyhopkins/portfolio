@@ -3,7 +3,7 @@
   font-weight: 700;
   text-align: center;
   font-size: 2em;
-  color: #5f370a;  
+  color: rgb(85, 0, 47);
   margin: 60px auto;
 }
 
@@ -29,9 +29,7 @@
 .content p {
   font-size: 1em;
   line-height: 1.7em;
-  /* padding-right: 10px; */
   margin-top: 6px;
-
 }
 
 .content ul {
@@ -49,8 +47,6 @@
 .a, .b, .c, .d, .e, .f, .g, .h {
   background-color: rgb(253, 244, 230);
   padding: 0 20px;
-  box-shadow: 0 0 6px 0 gray;
-
 }
 
 .a {
@@ -67,7 +63,6 @@
 
 .d {
   grid-area: d;
-
 }
 
 .e {
@@ -91,15 +86,14 @@
   background-size: cover;
   background-position: top;
   background-color: white;
-  box-shadow: none;
 }
+
 .h {
   grid-area: h;
   background-image: url(../../static/dark1.jpg);
   background-size:cover;
   background-position: top;
 }
-
 
 @media only screen and (max-width: 768px) {
   .content {
@@ -112,12 +106,11 @@
                         "g g g"
                         "d d d";
   }
-
   .header h2 {
     margin: 40px auto;
   }
-
 }
+
 @media only screen and (max-width: 425px) {
   .header h2 {
     margin: 80px auto 20px;
@@ -129,6 +122,7 @@
     margin: 4px auto;
   }
 }
+
 @media only screen and (max-width: 375px) {
   content {
     grid-template-columns: 1fr 1fr 1fr;
@@ -147,8 +141,8 @@
     font-size: 0.8em;
     line-height: 1.3em;
   }
-
 }
+
 @media only screen and (max-width: 320px) {
   .content p {
     line-height: 1.2em;

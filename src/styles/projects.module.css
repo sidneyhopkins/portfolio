@@ -1,12 +1,9 @@
-
-
-
 .projects h2 {
   text-align: center;
   font-family: 'Yeseva One';
   font-weight: 700;
   margin: 60px auto;
-  color: #5f370a;
+  color: rgb(85, 0, 47);
 }
 
 .projects .grid {
@@ -27,9 +24,6 @@
   flex-direction: column;
 }
 
-
-
-
 .box img {
   width: 100%;
   height: 50%;
@@ -39,7 +33,6 @@
 }
 
 .box .container {
-  /* transform: translate(0, -280px); */
   background-color: rgb(253, 244, 230);
   width: 100%;
   height: 50%;
@@ -58,8 +51,6 @@ figcaption {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  /* border: solid 2px rgb(196, 196, 196); */
-  /* color:  rgb(255, 255, 255); */
 }
 
 figcaption h3 {
@@ -70,34 +61,31 @@ figcaption h3 {
 
 figcaption p {
   margin: 0 15px;
-  font-size: 1em;
-
+  font-size: 0.9em;
 }
 
 figcaption .links {
-  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 figcaption .link {
   font-size: 1em;
-  width: 100px;
   background-color: #F29F8D;
   border: none;
   padding: 10px 20px;
   border-radius: 40px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  margin: 5px 20px;
-
+  margin: 0 20px;
 }
 
 figcaption .link:hover {
   background-color: #e4674a;
 }
 
-.empty {
-  visibility: hidden;
-}
 @media only screen and (max-width: 768px) {
   .projects .box {
     width: 250px;
@@ -106,23 +94,13 @@ figcaption .link:hover {
   figcaption h3 {
     font-size: 1.2em;
   }
-  figcaption p {
-    font-size: 0.9em;
-  }
   figcaption .link {
     padding: 4px 8px;
   }
-
 }
+
 @media only screen and (max-width: 425px) {
   .projects h2 {
     margin: 80px auto 40px;
   }
 }
-
-
-
-
-
-
-

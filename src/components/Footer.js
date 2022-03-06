@@ -6,10 +6,18 @@ export default function Footer() {
   return (
     <footer>
       <div className="social-links">
-        <a href="https://www.linkedin.com/in/sidney-hopkins/">
+        <a
+          href="https://www.linkedin.com/in/sidney-hopkins/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={LI} alt="LinkedIn logo" />
         </a>
-        <a href="https://github.com/sidneyhopkins">
+        <a
+          href="https://github.com/sidneyhopkins"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={GH} alt="github logo" />
         </a>
       </div>
