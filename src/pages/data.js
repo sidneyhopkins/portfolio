@@ -2,7 +2,7 @@ import crochet from "../../static/calc.png"
 import crud from "../../static/crud.png"
 import weather from "../../static/weather.png"
 import bird from "../../static/bird.png"
-import cosmos from "../../static/cosmos.jpg"
+import space from "../../static/space.png"
 import portfolio from "../../static/portfolio.png"
 
 export const projects = [
@@ -53,7 +53,7 @@ export const projects = [
   {
     id: "660",
     title: "In Progress",
-    img: cosmos,
+    img: space,
     alt: "clone",
     description: "Clone of a website.",
   },
