@@ -9,7 +9,7 @@ module.exports = {
   plugins: [],
   siteMetadata: {
     title: "Sidney Hopkins's Portfolio",
-    description: "front end web developer portfolio",
+    description: "front end developer portfolio",
     copyright: "Copyright 2022 Sidney Hopkins",
   },
 }
