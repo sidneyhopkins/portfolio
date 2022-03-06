@@ -12,7 +12,7 @@ HTML, CSS (CSS Modules), JavaScript, React, Gatsby, Netlify, Material UI
 
 This is my professional portfolio website where you can see my recent projects and more information about me.
 
-###[Link to Site](https://sidneyhopkins.info)
+### [Link to Site](https://sidneyhopkins.info)
 
 ## How to Use
 
