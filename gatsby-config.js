@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: ["gatsby-plugin-netlify"],
   siteMetadata: {
     title: "Sidney Hopkins",
     description: "Front-End Developer",
