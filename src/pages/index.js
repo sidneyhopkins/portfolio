@@ -1,19 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import ContentPasteOutlined from "@mui/icons-material/ContentPasteOutlined"
 import LI from "../../static/LI.png"
 import GH from "../../static/GH.png"
-import { Link } from "gatsby"
-import Apod from "../components/Apod"
+import { Link, graphql } from "gatsby"
 import ArrowRight from "@mui/icons-material/ArrowRight"
+import ArrowDownward from "@mui/icons-material/ArrowDownward"
 
-export default function Home() {
+export default function Home({ data }) {
+  const [click, setClick] = useState(false)
   const email = "sidhopkins14@gmail.com"
 
   return (
     <Layout>
-      <h1>Front-End Developer</h1>
+      <h1>{data.site.siteMetadata.description}</h1>
       <section className={styles.banner}>
         <div className={styles.elevator}>
           <p>
@@ -62,8 +63,8 @@ export default function Home() {
             <li>React</li>
             <li>Bootstrap</li>
             <li>Material-UI</li>
-            <li>Styled-Components</li>
             <li>Google Fonts</li>
+            <li>Styled-Components</li>
             <li>CSS-modules</li>
           </ul>
         </div>
@@ -93,6 +94,7 @@ export default function Home() {
           <ul>
             <li>TypeScript</li>
             <li>SASS</li>
+            <li>GraphQL</li>
           </ul>
         </div>
         <div className={styles.e}>
@@ -109,7 +111,37 @@ export default function Home() {
       </div>
       <section>
         <h2>My Favorite API</h2>
-        <Apod />
+        <section className={styles.api}>
+          <h3>NASA's Astronomy Picture of the Day</h3>
+          <div className={styles.container}>
+            {click !== true ? (
+              <div className={styles.imageBox}>
+                <button
+                  className={styles.apodbutton}
+                  onClick={() => setClick(true)}
+                >
+                  <span>Get APOD</span>
+                  <ArrowDownward />
+                </button>
+                Let's put it here...
+              </div>
+            ) : (
+              <div className={styles.imageBox}>
+                <img src={data.allApod.nodes[0].hdurl} alt="" />
+                <figcaption>
+                  <p className={styles.title}>{data.allApod.nodes[0].title}</p>
+                  <p>
+                    Copyright {data.allApod.nodes[0].copyright}{" "}
+                    {data.allApod.nodes[0].date}
+                  </p>
+                  <p className={styles.explanation}>
+                    {data.allApod.nodes[0].explanation}
+                  </p>
+                </figcaption>
+              </div>
+            )}
+          </div>
+        </section>
       </section>
       <section className={styles.projectdiv}>
         <Link className={styles.projectbutton} as="button" to="/projects">
@@ -119,3 +151,33 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    site {
+      siteMetadata {
+        copyright
+        description
+        title
+      }
+    }
+    allApod {
+      nodes {
+        copyright
+        date
+        explanation
+        hdurl
+        id
+        title
+        data {
+          copyright
+          date
+          explanation
+          hdurl
+          title
+          url
+        }
+      }
+    }
+  }
+`
