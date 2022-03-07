@@ -15,12 +15,13 @@ exports.sourceNodes = async ({
   )
 
   const data = await response.json()
+  console.log(data)
 
   createNode({
     id: data.date,
-    data: data,
     explanation: data.explanation,
     hdurl: data.hdurl,
+    url: data.url,
     date: data.date,
     title: data.title,
     copyright: data.copyright,

@@ -169,14 +169,6 @@ export const query = graphql`
         hdurl
         id
         title
-        data {
-          copyright
-          date
-          explanation
-          hdurl
-          title
-          url
-        }
       }
     }
   }
