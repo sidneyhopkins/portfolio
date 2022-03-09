@@ -15,7 +15,7 @@ export default function Home({ data }) {
 
   useEffect(() => {
     fetch(
-      `https://api.nasa.gov/planetary/apod?api_key=${process.env.APOD_API_KEY}`
+      `https://api.nasa.gov/planetary/apod?api_key=${process.env.GATSBY_APOD_API_KEY}`
     )
       .then(response => {
         if (response.ok) {
