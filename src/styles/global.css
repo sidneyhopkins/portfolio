@@ -8,7 +8,6 @@ html, body {
 body {
   font-family: "Karla", Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  
 }
 
 p {
@@ -24,17 +23,17 @@ p {
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 150px;
-  background-color: rgba(231, 214, 198, 0.747);
-  background-image: url(../../static/sunset.jpg);
+  height: 100px;
+  background-color: rgb(253, 240, 227);
+  /* background-image: url(../../static/sunset.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 
 nav img {
-  width: 100px;
-  margin: 25px;
+  width: 80px;
+  margin: 10px;
   display: flex;
   align-items: center;
 }
@@ -56,17 +55,20 @@ nav .links {
   align-items: center;
   justify-content: flex-end;
   text-align: right;
-  font-size: 1.8em;
+
+
 }
 
 nav a {
   display: inline-block;
   margin-left: 40px;
   margin-right: 20px;
-  font-weight: 700;
   padding-bottom: 8px;
+  font-family: 'Yeseva One';
+  font-size: 1.3em;
+  font-weight: 700;
   border-bottom: 3px solid transparent;
-  color: rgb(128, 0, 70);
+  color: rgb(160, 44, 9);
 }
 
 nav a:link {
@@ -74,7 +76,7 @@ nav a:link {
 }
 
 nav a:hover {
-  border-color: rgb(128, 0, 70);
+  border-color: rgb(160, 44, 9);
   text-decoration: none;
 }
 
@@ -87,42 +89,41 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../../static/sunset.jpg);
+  background-color: rgb(253, 240, 227);
+  /* background-image: url(../../static/sunset.jpg);
   background-position: center top;
-  background-size:cover;
-  height: 120px;
+  background-size:cover; */
+  height: 100px;
 }
 
 footer .social-links img {
   text-align: center;
-  width: 36px;
-  padding: 2px;
-  border: solid transparent 2px;
-  border-radius: 50px;
+  width: 32px;
+  padding: 1px;
+  border: solid transparent 1px;
+  border-radius: 100px;
   margin: 20px 10px 0;
   transition: 0.2s ease-out all;
+  background-color: rgb(148, 99, 84);
 }
 
 footer img:hover {
-  border-color: rgb(128, 0, 70);
-  transform: scale(1.1);
+  transform: scale(1.13);
 }
 
 footer h5 {
   word-spacing: 0.1em;
   font-size: 1em;
   font-weight: 400;
-  color: rgb(128, 0, 70);
+  color: rgb(160, 44, 9);
   margin-top: 4px;
 }
 
 @media only screen and (max-width: 768px) {
-  nav .links {
-    font-size: 1.3em;
-    margin-bottom: 2px;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+  nav a {
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-right: 10px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -133,6 +134,7 @@ footer h5 {
     margin: 0 auto;
     position: fixed;
     z-index: 2;
+    box-shadow: 0 0 2px 0 rgb(105, 105, 105);
   }
 
   nav img {
@@ -145,7 +147,7 @@ footer h5 {
   nav .icon {
     display: flex;
     margin: 10px;
-    color:rgb(128, 0, 70);
+    color:rgb(160, 44, 9);
   }
   nav .showmenu {
     display: flex;
@@ -156,10 +158,13 @@ footer h5 {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
-    background-color: #dacfc68c;
-    font-size: 1em;
+    background: linear-gradient(rgb(253, 240, 227), rgba(253, 240, 227, 0.308));    
   }
 
+  nav .showmenu a {
+    margin-right: 20px;
+    font-size: 1.0em;
+  }
 
   nav .rightdiv {
     display: flex;

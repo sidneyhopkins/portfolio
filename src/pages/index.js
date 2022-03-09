@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import ContentPasteOutlined from "@mui/icons-material/ContentPasteOutlined"
@@ -6,11 +6,33 @@ import LI from "../../static/LI.png"
 import GH from "../../static/GH.png"
 import { Link, graphql } from "gatsby"
 import ArrowRight from "@mui/icons-material/ArrowRight"
-import ArrowDownward from "@mui/icons-material/ArrowDownward"
 
 export default function Home({ data }) {
-  const [click, setClick] = useState(false)
+  const [image, setImage] = useState({})
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
   const email = "sidhopkins14@gmail.com"
+
+  useEffect(() => {
+    fetch(
+      `https://api.nasa.gov/planetary/apod?api_key=${process.env.APOD_API_KEY}`
+    )
+      .then(response => {
+        if (response.ok) {
+          return response.json()
+        }
+        throw response
+      })
+      .then(result => {
+        setImage(result)
+        setLoading(false)
+        console.log(result)
+      })
+      .catch(error => {
+        console.error("error fetching data: ", error)
+        setError(error)
+      })
+  }, [])
 
   return (
     <Layout>
@@ -114,29 +136,22 @@ export default function Home({ data }) {
         <section className={styles.api}>
           <h3>NASA's Astronomy Picture of the Day</h3>
           <div className={styles.container}>
-            {click !== true ? (
+            {loading ? (
               <div className={styles.imageBox}>
-                <button
-                  className={styles.apodbutton}
-                  onClick={() => setClick(true)}
-                >
-                  <span>Get APOD</span>
-                  <ArrowDownward />
-                </button>
-                Let's put it here...
+                Loading Photo...
+                <div>
+                  {error !== null && <span>Error Message: {error}</span>}
+                </div>
               </div>
             ) : (
               <div className={styles.imageBox}>
-                <img src={data.allApod.nodes[0].hdurl} alt="" />
+                <img src={image.hdurl} alt="" />
                 <figcaption>
-                  <p className={styles.title}>{data.allApod.nodes[0].title}</p>
+                  <p className={styles.title}>{image.title}</p>
                   <p>
-                    Copyright {data.allApod.nodes[0].copyright}{" "}
-                    {data.allApod.nodes[0].date}
+                    Copyright {image.copyright} {image.date}
                   </p>
-                  <p className={styles.explanation}>
-                    {data.allApod.nodes[0].explanation}
-                  </p>
+                  <p className={styles.explanation}>{image.explanation}</p>
                 </figcaption>
               </div>
             )}
@@ -158,16 +173,6 @@ export const query = graphql`
       siteMetadata {
         copyright
         description
-        title
-      }
-    }
-    allApod {
-      nodes {
-        copyright
-        date
-        explanation
-        hdurl
-        id
         title
       }
     }

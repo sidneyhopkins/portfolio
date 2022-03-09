@@ -9,7 +9,7 @@
 h1 {
   font-family: 'Yeseva One';
   font-weight: 700;
-  color: rgb(85, 0, 47);
+  color: rgb(94, 40, 23);
   text-align: center;
   font-size: 3.5em;
   margin: 60px 20px;
@@ -23,7 +23,7 @@ h2 {
 
 .elevator {
   margin: 0 auto;
-  background-color: #612f5a;
+  background-color: #a3734c;
   box-shadow: 0 0 12px 0 gray;
   max-width: 65%;
 }
@@ -64,7 +64,7 @@ h2 {
 }
 
 .button:hover {
-  background-color: #612f5a;
+  background-color: rgb(85, 0, 47);
 }
 
 .button span {
@@ -174,7 +174,7 @@ h2 {
 }
 
 .apodbutton:hover {
-  background-color: #612f5a;
+  background-color: rgb(85, 0, 47);
 }
 
 .apodbutton span {
@@ -279,7 +279,7 @@ h2 .link {
 }
 
 .projectbutton:hover {
-  background-color: #612f5a;
+  background-color: rgb(85, 0, 47);
 }
 
 .projectbutton span {
@@ -370,6 +370,10 @@ h2 .link {
   .tech {
     grid-gap: 10px;
   }
+  .projectbutton {
+    width: 230px;
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -379,8 +383,5 @@ h2 .link {
   .elevator p {
     font-size: 1.1em;
   }
-  .projectbutton {
-    width: 240px;
-    font-size: 1.6em;
-  }
+
 }
