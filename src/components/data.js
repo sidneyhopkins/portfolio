@@ -36,7 +36,7 @@ export const projects = [
     id: "440",
     title: "React Ecommerce",
     code: "https://github.com/sidneyhopkins/react-project-ecommerce",
-    site: "https://sidneyhopkins.github.io/react-project-ecommerce/",
+    site: "https://unruffled-mccarthy-306c28.netlify.app/",
     img: bird,
     alt: "ecommerce project",
     description: "A realistic ecommerce page with a shopping cart.",
