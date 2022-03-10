@@ -3,7 +3,7 @@
   font-family: 'Yeseva One';
   font-weight: 700;
   margin: 60px auto;
-  color: rgb(94, 40, 23);
+  color: #3d3f30;
 }
 
 .projects .grid {
@@ -26,16 +26,16 @@
 
 .box img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   object-position: top;
   object-fit: cover;
   visibility: visible;
 }
 
 .box .container {
-  background-color: rgb(253, 240, 227);
+  background-color: #f3e7ca;
   width: 100%;
-  height: 50%;
+  height: 40%;
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -55,8 +55,9 @@ figcaption {
 
 figcaption h3 {
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center;
+
 }
 
 figcaption p {
@@ -73,7 +74,7 @@ figcaption .links {
 
 figcaption .link {
   font-size: 1em;
-  background-color: #bd7a4d;
+  background-color: #aa6a3f;
   border: none;
   padding: 10px 20px;
   border-radius: 40px;

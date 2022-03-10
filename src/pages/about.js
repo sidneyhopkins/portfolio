@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Seo from "../components/Seo"
 import * as styles from "../styles/about.module.css"
 
 export default function About() {
   return (
     <Layout>
+      <Seo />
       <section className={styles.header}>
         <h2>About</h2>
       </section>
@@ -43,11 +45,20 @@ export default function About() {
           </ul>
         </div>
         <div className={styles.d}>
-          <h3>Movies</h3>
+          <h3>Podcasts</h3>
           <ul>
-            <li>Harry Potter and the Half Blood Prince</li>
-            <li>Harry Potter and the Prisoner of Azkaban</li>
-            <li>How to Train Your Dragon</li>
+            <li>
+              Unlocking Us <span>with Brene Brown</span>
+            </li>
+            <li>
+              Dare to Lead <span>with Brene Brown</span>
+            </li>
+            <li>
+              The Happiness Lab <span>with Dr. Laurie Santos</span>
+            </li>
+            <li>
+              A Slight Change of Plans <span>with Maya Shankar</span>
+            </li>
           </ul>
         </div>
         <div className={styles.e}></div>

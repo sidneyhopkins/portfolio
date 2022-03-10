@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Layout from "../components/Layout"
+import Seo from "../components/Seo"
 import * as styles from "../styles/home.module.css"
 import ContentPasteOutlined from "@mui/icons-material/ContentPasteOutlined"
 import LI from "../../static/LI.png"
@@ -25,7 +26,7 @@ export default function Home({ data }) {
       })
       .then(result => {
         setImage(result)
-        setLoading(false)
+        // setLoading(false)
         console.log(result)
       })
       .catch(error => {
@@ -36,6 +37,7 @@ export default function Home({ data }) {
 
   return (
     <Layout>
+      <Seo />
       <h1>{data.site.siteMetadata.description}</h1>
       <section className={styles.banner}>
         <div className={styles.elevator}>
@@ -136,25 +138,37 @@ export default function Home({ data }) {
         <section className={styles.api}>
           <h3>NASA's Astronomy Picture of the Day</h3>
           <div className={styles.container}>
-            {loading ? (
-              <div className={styles.imageBox}>
-                Loading Photo...
-                <div>
-                  {error !== null && <span>Error Message: {error}</span>}
-                </div>
-              </div>
-            ) : (
-              <div className={styles.imageBox}>
-                <img src={image.hdurl} alt="" />
-                <figcaption>
-                  <p className={styles.title}>{image.title}</p>
-                  <p>
-                    Copyright {image.copyright} {image.date}
-                  </p>
-                  <p className={styles.explanation}>{image.explanation}</p>
-                </figcaption>
-              </div>
-            )}
+            <div
+              className={styles.load}
+              style={loading ? { display: "flex" } : { display: "none" }}
+            >
+              Loading Image...
+            </div>
+            <div className={styles.imageBox}>
+              <img
+                src={image.hdurl}
+                alt=""
+                style={
+                  loading ? { visibility: "hidden" } : { visibility: "visible" }
+                }
+                onLoad={() => setLoading(false)}
+              />
+              <figcaption
+                style={
+                  loading ? { visibility: "hidden" } : { visibility: "visible" }
+                }
+              >
+                <p className={styles.title}>{image.title}</p>
+                <p>
+                  {image.copyright !== "" && (
+                    <span>
+                      Copyright {image.copyright} {image.date}
+                    </span>
+                  )}
+                </p>
+                <p className={styles.explanation}>{image.explanation}</p>
+              </figcaption>
+            </div>
           </div>
         </section>
       </section>

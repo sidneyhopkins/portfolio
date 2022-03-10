@@ -9,7 +9,7 @@
 h1 {
   font-family: 'Yeseva One';
   font-weight: 700;
-  color: rgb(94, 40, 23);
+  color: #3d3f30;
   text-align: center;
   font-size: 3.5em;
   margin: 60px 20px;
@@ -23,7 +23,7 @@ h2 {
 
 .elevator {
   margin: 0 auto;
-  background-color: #a3734c;
+  background-color: #997B66;
   box-shadow: 0 0 12px 0 gray;
   max-width: 65%;
 }
@@ -32,9 +32,9 @@ h2 {
   padding: 30px;
   line-height: 2.3em;
   font-size: 1.5em;
-  font-family: 'Yeseva One';
+  font-family: 'Karla';
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #ffffff;
 }
 
@@ -51,7 +51,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #A67784;
+  background-color: #b36e41;
   border: none;
   border-radius: 4px;
   padding: 20px;
@@ -64,7 +64,7 @@ h2 {
 }
 
 .button:hover {
-  background-color: rgb(85, 0, 47);
+  background-color: #ae2012;
 }
 
 .button span {
@@ -103,21 +103,24 @@ h2 {
 
 .c {
   grid-area: c;
+
 }
 
 .d {
   grid-area: d;
+
 }
 
 .e {
   grid-area: e;
+
 }
 
 .a, .b, .c, .d, .e {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #ffe0c3;
+  background-color: #E8AC65;
   box-shadow: 0 0 6px 0 gray;
 
 }
@@ -145,7 +148,7 @@ h2 {
   justify-content: center;
   position: relative;
   margin-bottom: 40px;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 249, 244);
 }
 
 .api h3 {
@@ -153,50 +156,6 @@ h2 {
   text-align: center;
   font-size: 1.2em;
   margin-bottom: 30px;
-}
-
-.apodbutton {
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #A67784;
-  border: none;
-  border-radius: 4px;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-family: "Karla", Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
-  text-transform: capitalize;
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-}
-
-.apodbutton:hover {
-  background-color: rgb(85, 0, 47);
-}
-
-.apodbutton span {
-  margin-right: 5px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.apodbutton:hover span {
-  padding-right: 20px;
-}
-
-.apodbutton:active {
-  transform: scale(0.97);
-}
-
-.api .apodbutton {
-  text-align: center;
-  display: block;
-  padding: 10px 20px;
 }
 
 .container {
@@ -207,6 +166,14 @@ h2 {
   justify-content: center;
   transition: all 1.0s ease;
   font-size: 1.4em;
+}
+
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .imageBox {
@@ -225,12 +192,13 @@ h2 {
 .imageBox figcaption {
   text-align: center;
   color: black;
-  font-size: 0.5em;
+  font-size: 0.6em;
   width: 90%;
   max-width: 800px;
 }
 
 .imageBox figcaption .title {
+  font-size: 1.2em;
   font-weight: 700;
   margin-top: 10px;
 }
@@ -243,7 +211,7 @@ h2 {
   text-align: left;
   padding: 20px;
   line-height: 1.7em;
-  font-size: 1.8em;
+  font-size: 1.2em;
   border: 1px solid gray;
   box-shadow: 0 0 10px 0 gray;
 }
@@ -263,7 +231,7 @@ h2 .link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #A67784;
+  background-color: #b36e41;
   border: none;
   border-radius: 4px;
   padding: 20px;
@@ -279,7 +247,7 @@ h2 .link {
 }
 
 .projectbutton:hover {
-  background-color: rgb(85, 0, 47);
+  background-color: #ae2012;
 }
 
 .projectbutton span {

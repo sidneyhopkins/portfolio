@@ -3,7 +3,7 @@ import crud from "../../static/crud.png"
 import weather from "../../static/weather.png"
 import bird from "../../static/bird.png"
 import space from "../../static/space.png"
-import portfolio from "../../static/portfolio.png"
+import portfolio from "../../static/portfolio.jpg"
 
 export const projects = [
   {

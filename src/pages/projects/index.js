@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../../components/Layout"
+import Seo from "../../components/Seo"
 import { projects } from "../../components/data"
 import * as style from "../../styles/projects.module.css"
 
 export default function ProjectsPage() {
   return (
     <Layout>
+      <Seo />
       <section className={style.projects}>
         <h2>Projects</h2>
         <div className={style.grid}>

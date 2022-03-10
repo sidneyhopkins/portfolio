@@ -24,7 +24,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100px;
-  background-color: rgb(253, 240, 227);
+  background-color: #F1DCA7;
   /* background-image: url(../../static/sunset.jpg);
   background-position: center center;
   background-size: cover; */
@@ -68,7 +68,7 @@ nav a {
   font-size: 1.3em;
   font-weight: 700;
   border-bottom: 3px solid transparent;
-  color: rgb(160, 44, 9);
+  color: #3d3f30;
 }
 
 nav a:link {
@@ -76,7 +76,7 @@ nav a:link {
 }
 
 nav a:hover {
-  border-color: rgb(160, 44, 9);
+  border-color: #3d3f30;
   text-decoration: none;
 }
 
@@ -89,22 +89,18 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(253, 240, 227);
-  /* background-image: url(../../static/sunset.jpg);
-  background-position: center top;
-  background-size:cover; */
+  background-color: #F1DCA7;
   height: 100px;
 }
 
 footer .social-links img {
   text-align: center;
   width: 32px;
-  padding: 1px;
-  border: solid transparent 1px;
+  border: solid transparent 2px;
   border-radius: 100px;
   margin: 20px 10px 0;
   transition: 0.2s ease-out all;
-  background-color: rgb(148, 99, 84);
+  background-color: #b15b22;
 }
 
 footer img:hover {
@@ -115,7 +111,7 @@ footer h5 {
   word-spacing: 0.1em;
   font-size: 1em;
   font-weight: 400;
-  color: rgb(160, 44, 9);
+  color: #3d3f30;
   margin-top: 4px;
 }
 
@@ -147,7 +143,7 @@ footer h5 {
   nav .icon {
     display: flex;
     margin: 10px;
-    color:rgb(160, 44, 9);
+    color:#ae2012;
   }
   nav .showmenu {
     display: flex;
@@ -158,7 +154,7 @@ footer h5 {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
-    background: linear-gradient(rgb(253, 240, 227), rgba(253, 240, 227, 0.308));    
+    background: linear-gradient(#F1DCA7, #f1dca748);    
   }
 
   nav .showmenu a {

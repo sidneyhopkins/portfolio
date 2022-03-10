@@ -3,7 +3,7 @@
   font-weight: 700;
   text-align: center;
   font-size: 2em;
-  color: rgb(94, 40, 23);
+  color: #3d3f30;
   margin: 60px auto;
 }
 
@@ -46,8 +46,8 @@
 }
 
 .a, .b, .c, .d, .e, .f, .g, .h {
-  background-color: rgb(236, 208, 177);
-  /* border: 1px gray solid; */
+  background-color: #e9bb9f;
+  border-radius: 10px;
   padding: 0 20px;
 }
 
@@ -147,6 +147,6 @@
 
 @media only screen and (max-width: 320px) {
   .content p {
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
 }
