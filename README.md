@@ -16,7 +16,7 @@ This is my professional portfolio website where you can see my recent projects a
 
 ## How to Use
 
-Visit the site directly at the link above.
+Visit the site at the link above.
 
 ## License
 
