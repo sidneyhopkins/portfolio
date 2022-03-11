@@ -64,7 +64,9 @@ h2 {
 }
 
 .button:hover {
-  background-color: #ae2012;
+  background-color: #ac3e34;
+  /* background-color: #ac3434; */
+
 }
 
 .button span {
@@ -247,7 +249,7 @@ h2 .link {
 }
 
 .projectbutton:hover {
-  background-color: #ae2012;
+  background-color: #ac3e34;
 }
 
 .projectbutton span {

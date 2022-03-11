@@ -26,7 +26,6 @@ export default function Home({ data }) {
       })
       .then(result => {
         setImage(result)
-        // setLoading(false)
         console.log(result)
       })
       .catch(error => {
@@ -142,7 +141,7 @@ export default function Home({ data }) {
               className={styles.load}
               style={loading ? { display: "flex" } : { display: "none" }}
             >
-              Loading Image...
+              Loading Image...{error}
             </div>
             <div className={styles.imageBox}>
               <img

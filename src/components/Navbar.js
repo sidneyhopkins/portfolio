@@ -2,7 +2,7 @@ import Close from "@mui/icons-material/Close"
 import Menu from "@mui/icons-material/Menu"
 import { Link } from "gatsby"
 import React, { useState } from "react"
-import logo from "../../static/black.svg"
+import logo from "../../static/copper.svg"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)

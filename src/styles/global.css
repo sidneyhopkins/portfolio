@@ -95,12 +95,12 @@ footer {
 
 footer .social-links img {
   text-align: center;
-  width: 32px;
+  width: 28px;
   border: solid transparent 2px;
   border-radius: 100px;
   margin: 20px 10px 0;
   transition: 0.2s ease-out all;
-  background-color: #b15b22;
+  background-color: #997B66;
 }
 
 footer img:hover {

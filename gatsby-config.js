@@ -22,7 +22,7 @@ module.exports = {
           "Sidney Hopkins' web development portfolio website. Learn more about her work.",
         start_url: "/",
         background_color: "#FFFFFF",
-        theme_color: "#A02C09",
+        theme_color: "#FFFFFF",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
@@ -34,6 +34,7 @@ module.exports = {
         legacy: "true",
       },
     },
+    "gatsby-plugin-offline",
   ],
   siteMetadata: {
     title: "Sidney Hopkins",
