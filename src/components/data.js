@@ -1,18 +1,30 @@
-import crochet from "../../static/calc.png"
-import crud from "../../static/crud.png"
-import weather from "../../static/weather.png"
-import bird from "../../static/bird.png"
-import space from "../../static/space.png"
-import portfolio from "../../static/portfolio.jpg"
+import crud from "../static/crud.png"
+import weather from "../static/weather.png"
+import bird from "../static/bird.png"
+import scribd from "../static/scribd.png"
+import portfolio from "../static/portfolio.jpg"
 
 export const projects = [
+  {
+    id: "3/31/21",
+    title: "Scribd Clone",
+    code: "https://github.com/sidneyhopkins/scribd-clone",
+    site: "https://sidney-scribd-clone.netlify.app/",
+    img: scribd,
+    alt: "Scribd Clone",
+    description:
+      "A recreation of the Scribd audiobook subscription service landing page, with improved responsiveness for tablet screens.",
+    bgc: "#234D5B",
+  },
   {
     id: "110",
     title: "Portfolio",
     code: "https://github.com/sidneyhopkins/portfolio",
     img: portfolio,
     alt: "portfolio",
-    description: "My personal website & portfolio.",
+    description:
+      "My personal Gatsby website and portfolio, where you can see NASA's Astronomy Photo of the Day.",
+    bgc: "#8e5900",
   },
   {
     id: "220",
@@ -21,7 +33,9 @@ export const projects = [
     site: "https://sidney-journal.netlify.app",
     img: crud,
     alt: "journal app project",
-    description: "A sharp CRUD journal made with React.",
+    description:
+      "A responsively designed and sharp CRUD (create, read, update, delete) journal made with React.",
+    bgc: "#79192B",
   },
   {
     id: "330",
@@ -30,7 +44,9 @@ export const projects = [
     site: "https://sidney-weather-app.netlify.app",
     img: weather,
     alt: "weather app project",
-    description: "Type a city to receive live weather data.",
+    description:
+      "This mobile-friendly weather app allows you to type a city name to view live weather data and a weekly forecast.",
+    bgc: "#792E0E",
   },
   {
     id: "440",
@@ -39,22 +55,17 @@ export const projects = [
     site: "https://sidney-react-ecommerce.netlify.app",
     img: bird,
     alt: "ecommerce project",
-    description: "A realistic ecommerce page with a shopping cart.",
+    description:
+      "A realistic and responsive ecommerce page with an image slider and shopping cart.",
+    bgc: "#155447",
   },
-  {
-    id: "550",
-    title: "Crochet Calculator",
-    code: "https://github.com/sidneyhopkins/crochet-calculator",
-    site: "https://codepen.io/sidneyhopkins/pen/Rwjoery",
-    img: crochet,
-    alt: "crochet project",
-    description: "Users can accurately & quickly plan their crochet projects.",
-  },
-  {
-    id: "660",
-    title: "In Progress",
-    img: space,
-    alt: "clone",
-    description: "Clone of a website.",
-  },
+  // {
+  //   id: "550",
+  //   title: "Crochet Calculator",
+  //   code: "https://github.com/sidneyhopkins/crochet-calculator",
+  //   site: "https://codepen.io/sidneyhopkins/pen/Rwjoery",
+  //   img: crochet,
+  //   alt: "crochet project",
+  //   description: "Users can accurately & quickly plan their crochet projects.",
+  // },
 ]

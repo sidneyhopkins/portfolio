@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Karla');
+
+$heading-font: 'Yeseva One';
+$main-font: "Karla", Arial, Helvetica, sans-serif;
+
+$muted-color: #e7d6c2;
+$button-color-primary2: #ab5821;
+$button-color-primary: #6b2721;
+$button-color-secondary: #872118;
+$elevator-bg: #234D5B;
+$bg-gray: #ECECE3;
+$header-color: #3b2614;
+$dark-footer-color: rgb(16, 27, 27);
+$nav-color-dk: black;
+$mobile-nav-bg: #ecece3b9;
+
+
+
+:export {
+  colorOne: $button-color-primary2;
+  colorTwo: $button-color-primary;
+  colorThree: $header-color;
+  colorFour: $button-color-secondary
+}

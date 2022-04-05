@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-netlify",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
