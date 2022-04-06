@@ -92,14 +92,14 @@
 
 .e {
   grid-area: e;
-  background-image: url(../../static/tardis.jpg);
+  background-image: url(../static/tardis.jpg);
   background-size:cover;
   background-position: center;
 }
 
 .f {
   grid-area: f;
-  background-image: url(../../static/greatly2.jpg);
+  background-image: url(../static/greatly2.jpg);
   background-size:cover;
   background-position: center center;
 
@@ -107,7 +107,7 @@
 
 .g {
   grid-area: g;
-  background-image: url(../../static/hp2.png);
+  background-image: url(../static/hp2.png);
   background-size: cover;
   background-position: top;
   background-color: white;
@@ -115,7 +115,7 @@
 
 .h {
   grid-area: h;
-  background-image: url(../../static/dark1.jpg);
+  background-image: url(../static/dark1.jpg);
   background-size:cover;
   background-position: top;
 }

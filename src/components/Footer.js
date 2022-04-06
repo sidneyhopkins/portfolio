@@ -1,6 +1,6 @@
 import React from "react"
-import LI from "../../static/LI.png"
-import GH from "../../static/GH.png"
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import GitHubIcon from "@mui/icons-material/GitHub"
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded"
 export default function Footer() {
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={LI} alt="LinkedIn" />
+              <LinkedInIcon className="icons" />
             </a>
           </li>
 
@@ -26,7 +26,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={GH} alt="Github" />
+              <GitHubIcon className="icons" />
             </a>
           </li>
         </ul>
