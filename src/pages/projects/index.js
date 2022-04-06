@@ -3,7 +3,7 @@ import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import { projects } from "../../components/data"
 import * as styles from "../../styles/projects.module.scss"
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
+import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 
 export default function ProjectsPage() {
   return (
@@ -31,7 +31,7 @@ export default function ProjectsPage() {
                         >
                           <span>See the code</span>
                         </a>
-                        <ArrowForwardIosIcon className={styles.arrow} />
+                        <ChevronRightRoundedIcon className={styles.arrow} />
                       </div>
                     )}
                   </div>
@@ -46,7 +46,7 @@ export default function ProjectsPage() {
                         >
                           <span>Browse the site</span>
                         </a>
-                        <ArrowForwardIosIcon className={styles.arrow} />
+                        <ChevronRightRoundedIcon className={styles.arrow} />
                       </div>
                     )}
                   </div>

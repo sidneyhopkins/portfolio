@@ -70,24 +70,25 @@ h2 {
 
 .line {
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .link {
   font-size: 14px;
-  border-bottom: 1px solid transparent;
   text-decoration: none;
   color: white;
 }
 
 .arrow {
-  font-size: 10px;
+  font-size: 20px;
   transition: 0.2s all;
   color: white;
 }
 
 .line:hover {
   a {
-    border-color: white;
+    text-decoration: underline;
   }
   .arrow {
     transform: translateX(6px);
@@ -126,25 +127,4 @@ h2 {
       margin: 0 auto;
     }
   }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 450px) {
-
-}
-
-@media only screen and (max-width: 425px) {
-
 }
